@@ -23,4 +23,5 @@ def to_pray():
                 'Maghrib': df.loc[row]['Maghrib'],
                 'Isha': df.loc[row]['Isha'],
             }
-            return json.dumps(adan)
+            s = json.dumps(adan)
+            return s.replace(f'"', "'")
