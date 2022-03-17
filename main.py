@@ -2,6 +2,8 @@ from fastapi import FastAPI
 import pandas as pd
 from datetime import datetime
 import json
+from fastapi.responses import JSONResponse
+
 
 app = FastAPI()
 
@@ -24,4 +26,4 @@ def to_pray():
                 'Isha': df.loc[row]['Isha'],
             }
             
-            return dumps(adan)
+            return JSONResponse(content=adan)
