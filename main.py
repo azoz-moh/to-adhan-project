@@ -17,7 +17,7 @@ def to_pray():
     df = pd.read_excel('Salah-Calendar.xlsx', sheet_name='Table 1', usecols="A:L")
     for row in range(len(df)):
         if df.loc[row]['Date'].strftime('%d-%m') == Machine_date:
-             adan = {
+            adan = {
                 "Date": df.loc[row]['Date'].strftime('%d-%m'),
                 "Fajr": df.loc[row]['Fajr'].strftime('%H:%m'),
                 "Fajr_Iqama": df.loc[row]['Fajr Iqama'].strftime('%H:%m'),
