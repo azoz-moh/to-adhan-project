@@ -29,14 +29,18 @@ def to_pray():
     for row in range(len(df)):
         if df.loc[row]['Date'].strftime('%d-%m') == Machine_date:
             adan = {
-                'Date': df.loc[row]['Date'].strftime('%d-%m'),
-                'Fajr': df.loc[row]['Fajr'],
-                'Fajr Iqama': df.loc[row]['Fajr Iqama'].strftime('%I:%M %p'),
-                'Sunrise': df.loc[row]['Sunrise'],
-                'Zuhr': df.loc[row]['Zuhr'],
-                'Asr': df.loc[row]['Asr'],
-                'Maghrib': df.loc[row]['Maghrib'],
-                'Isha': df.loc[row]['Isha'],
+                "Date": df.loc[row]['Date'].strftime('%d-%m'),
+                "Fajr": df.loc[row]['Fajr'],
+                "Fajr_Iqama": df.loc[row]['Fajr Iqama'].strftime('%I:%M %p'),
+                "Sunrise": df.loc[row]['Sunrise'],
+                "Zuhr": df.loc[row]['Zuhr'],
+                "Zuhr_Iqama": df.loc[row]['Zuhr Iqama'],
+                "Asr": df.loc[row]['Asr'],
+                "Asr_Iqama": df.loc[row]['Asr Iqama'],
+                "Maghrib": df.loc[row]['Maghrib'],
+                "Maghrib_Iqama": df.loc[row]['Maghrib Iqama'],
+                "Isha": df.loc[row]['Isha'],
+                "Isha_Iqama": df.loc[row]['Isha Iqama'],
             }
             
             return JSONResponse(content=adan)
