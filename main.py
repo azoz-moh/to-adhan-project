@@ -31,7 +31,7 @@ def to_pray():
             adan = {
                 "Date": df.loc[row]['Date'].strftime('%d-%m'),
                 "Fajr": df.loc[row]['Fajr'],
-                "Fajr_Iqama": df.loc[row]['Fajr Iqama'].strftime('%I:%M %p'),
+                "Fajr_Iqama": df.loc[row]['Fajr Iqama'],
                 "Sunrise": df.loc[row]['Sunrise'],
                 "Zuhr": df.loc[row]['Zuhr'],
                 "Zuhr_Iqama": df.loc[row]['Zuhr Iqama'],
