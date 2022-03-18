@@ -7,18 +7,7 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
-# origins = ["http://to-adhan.herokuapp.com",
-#     "https://to-adhan.herokuapp.com",
-#     "http://localhost",
-#     "http://localhost:8080"]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
 
 Machine_date = datetime.today().strftime('%d-%m')
 
