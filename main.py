@@ -17,17 +17,17 @@ def to_pray():
     df = pd.read_excel('Salah-Calendar.xlsx', sheet_name='Table 1', usecols="A:L")
     for row in range(len(df)):
         if df.loc[row]['Date'].strftime('%d-%m') == Machine_date:
-            adan = {
+             adan = {
                 "Date": df.loc[row]['Date'].strftime('%d-%m'),
-                "Fajr": df.loc[row]['Fajr'],
+                "Fajr": df.loc[row]['Fajr'].strftime('%H:%m'),
                 "Fajr_Iqama": df.loc[row]['Fajr Iqama'].strftime('%H:%m'),
-                "Sunrise": df.loc[row]['Sunrise'],
+                "Sunrise": df.loc[row]['Sunrise'].strftime('%H:%m'),
                 "Zuhr": df.loc[row]['Zuhr'],
-                "Zuhr_Iqama": df.loc[row]['Zuhr Iqama'],
-                "Asr": df.loc[row]['Asr'],
-                "Asr_Iqama": df.loc[row]['Asr Iqama'],
-                "Maghrib": df.loc[row]['Maghrib'],
-                "Maghrib_Iqama": df.loc[row]['Maghrib Iqama'],
+                "Zuhr_Iqama": df.loc[row]['Zuhr Iqama'].strftime('%H:%m'),
+                "Asr": df.loc[row]['Asr'].strftime('%H:%m'),
+                "Asr_Iqama": df.loc[row]['Asr Iqama'].strftime('%H:%m'),
+                "Maghrib": df.loc[row]['Maghrib'].strftime('%H:%m'),
+                "Maghrib_Iqama": df.loc[row]['Maghrib Iqama'].strftime('%H:%m'),
                 "Isha": df.loc[row]['Isha'],
                 "Isha_Iqama": df.loc[row]['Isha Iqama'],
             }
