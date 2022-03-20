@@ -28,7 +28,7 @@ def to_pray():
     for row in range(len(df)):
         if df.loc[row]['Date'].strftime('%d-%m') == Machine_date:
             adan = {
-                "Date": df.loc[row]['Date'].strftime('%d-%m'),
+                "Date": df.loc[row]['Date'].strftime('%m-%d'),
                 "Fajr": df.loc[row]['Fajr'],
                 "Fajr_Iqama": df.loc[row]['Fajr Iqama'].strftime('%H:%M'),
                 "Sunrise": df.loc[row]['Sunrise'],
