@@ -30,14 +30,14 @@ def to_pray():
             adan = {
                 "Date": df.loc[row]['Date'].strftime('%d-%m'),
                 "Fajr": df.loc[row]['Fajr'],
-                "Fajr_Iqama": df.loc[row]['Fajr Iqama'].strftime('%H:%m'),
+                "Fajr_Iqama": df.loc[row]['Fajr Iqama'].strftime('%H:%M'),
                 "Sunrise": df.loc[row]['Sunrise'],
                 "Zuhr": df.loc[row]['Zuhr'],
-                "Zuhr_Iqama": df.loc[row]['Zuhr Iqama'].strftime('%I:%m'),
+                "Zuhr_Iqama": df.loc[row]['Zuhr Iqama'].strftime('%I:%M'),
                 "Asr": df.loc[row]['Asr'],
-                "Asr_Iqama": df.loc[row]['Asr Iqama'].strftime('%I:%m'),
+                "Asr_Iqama": df.loc[row]['Asr Iqama'].strftime('%I:%M'),
                 "Maghrib": df.loc[row]['Maghrib'],
-                "Maghrib_Iqama": df.loc[row]['Maghrib Iqama'].strftime('%H:%m'),
+                "Maghrib_Iqama": df.loc[row]['Maghrib Iqama'].strftime('%H:%M'),
                 "Isha": df.loc[row]['Isha'],
                 "Isha_Iqama": df.loc[row]['Isha Iqama'],
             }
